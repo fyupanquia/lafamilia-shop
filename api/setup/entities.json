@@ -1,0 +1,90 @@
+[
+    {
+        "EMAIL": "contact@gloria.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111111",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Gloria",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "https://0901.static.prezi.com/preview/v2/xmgpciovzde3f7kzfwmmwyb2fx6jc3sachvcdoaizecfr3dnitcq_3_0.png",
+        "NOMBRE" : "Gloria"
+    },
+    {
+        "EMAIL": "contact@elite.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111112",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Elite",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "https://www.saucebranding.com/trabajo/elite/imgs/trabajos/331/big0000.jpg",
+        "NOMBRE": "Elite"
+    },
+    {
+        "EMAIL": "contact@pg.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111113",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Procter & Gamble",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "https://www.latinpymes.com/wp-content/uploads/2020/10/PROCTER.jpg",
+        "NOMBRE": "P & G"
+    },
+    {
+        "EMAIL": "contact@donofrio.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111114",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Donofrio",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "https://www.donofrio.com.pe/sites/default/files/logo-donofrio-01.png",
+        "NOMBRE": "Donofrio"
+    },
+    {
+        "EMAIL": "contact@backus.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111115",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Backus",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "http://2.bp.blogspot.com/-ChNKsuSHqhk/UifbgEHoZ0I/AAAAAAAAAE8/kU2JPfw9tp8/w1200-h630-p-k-no-nu/backus.jpg",
+        "NOMBRE": "Backus"
+    },
+    {
+        "EMAIL": "contact@incakola.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111116",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Inca Kola",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "https://storage.googleapis.com/codigo_bucket/wp-content/uploads/2014/05/incakolalogo.jpg",
+        "NOMBRE": "Inca kola"
+    },
+    {
+        "EMAIL": "contact@donvittorio.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111117",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Don Vittorio",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "https://lacombinaciondonvittorio.com/wp-content/uploads/2021/10/logo-don-victorio-1.png",
+        "NOMBRE": "Don Vittorio"
+    },
+    {
+        "EMAIL": "contact@nestle.com",
+        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "NUM_DOCUMENTO": "11111111118",
+        "TIPO_DOCUMENTO": "RUC",
+        "RAZON_SOCIAL": "Nestle",
+        "TIPO": "PROVEEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "https://1000marcas.net/wp-content/uploads/2020/01/Nestle-logo.jpg",
+        "NOMBRE": "Nestle"
+    }
+]

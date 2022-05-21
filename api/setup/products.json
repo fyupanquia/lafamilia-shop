@@ -1,0 +1,235 @@
+[
+    {
+        "NAME": "Leche Pura vida",
+        "IMG_URL": "https://plazavea.vteximg.com.br/arquivos/ids/370285-450-450/20199919.jpg",
+        "CURRENT_PRICE": 3.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 3.50,
+        "CATEGORY": "DIARIOS",
+        "BADGE": "aa-sale",
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Leche Gloria",
+        "IMG_URL": "https://www.gloria.com.pe/uploads/products/lacteos/gloria-entera-400g.jpg",
+        "CURRENT_PRICE": 3.50,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 4.00,
+        "CATEGORY": "DIARIOS",
+        "BADGE": "aa-sale",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Lech Bonlé",
+        "IMG_URL": "https://miamarket.pe/assets/uploads/b68a392d98299bc634d9065171c9de2e.jpg",
+        "CURRENT_PRICE": 2.50,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 3.00,
+        "CATEGORY": "DIARIOS",
+        "BADGE": "aa-sale",
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Queso Bonlé",
+        "IMG_URL": "https://wongfood.vteximg.com.br/arquivos/ids/302851-1000-1000/38464-01-31153.jpg",
+        "CURRENT_PRICE": 3.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 3.40,
+        "CATEGORY": "DIARIOS",
+        "BADGE": "aa-sale",
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Bimbo integral",
+        "IMG_URL": "https://s.cornershopapp.com/product-images/382358.jpg",
+        "CURRENT_PRICE": 18.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 20.00,
+        "CATEGORY": "DIARIOS",
+        "BADGE": "aa-sale",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Bimbo sin bordes",
+        "IMG_URL": "https://dojiw2m9tvv09.cloudfront.net/50013/product/8978947746.jpg",
+        "CURRENT_PRICE": 8.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 8.50,
+        "CATEGORY": "DIARIOS",
+        "BADGE": "aa-sold-out",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Atún Bells",
+        "IMG_URL": "https://plazavea.vteximg.com.br/arquivos/ids/553454-450-450/20053414.jpg",
+        "CURRENT_PRICE": 18.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 20.00,
+        "CATEGORY": "DIARIOS",
+        "BADGE": "aa-hot",
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Atún Primor",
+        "IMG_URL": "https://plazavea.vteximg.com.br/arquivos/ids/560949-1000-1000/20125295.jpg",
+        "CURRENT_PRICE": 18.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 5.00,
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Coca Cola 3L",
+        "IMG_URL": "https://jumboargentina.vtexassets.com/arquivos/ids/441468/Coca-Cola-25-L-3-17483.jpg",
+        "CURRENT_PRICE": 9.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 9.50,
+        "CATEGORY": "BEBIDAS",
+        "BADGE": "aa-sale",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Coca Cola 450mg",
+        "IMG_URL": "https://tatami.com.pe/159-large_default/coca-cola.jpg",
+        "CURRENT_PRICE": 2.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 2.20,
+        "CATEGORY": "BEBIDAS",
+        "BADGE": "aa-sold-out",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Inca Kola 3L",
+        "IMG_URL": "https://plazavea.vteximg.com.br/arquivos/ids/525928-450-450/21186.jpg",
+        "CURRENT_PRICE": 8.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 8.50,
+        "CATEGORY": "BEBIDAS",
+        "BADGE": "aa-hot",
+        "GROUP": "NOVEDADES"
+    },
+    {
+        "NAME": "Inca Kola 450mg",
+        "IMG_URL": "https://cdn.shopify.com/s/files/1/0012/4862/4736/products/inca_per_1024x1024.jpg",
+        "CURRENT_PRICE": 1.80,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 2.00,
+        "CATEGORY": "BEBIDAS",
+        "GROUP": "NOVEDADES"
+    },
+    {
+        "NAME": "Suave x6",
+        "IMG_URL": "http://cdn.shopify.com/s/files/1/0286/1380/4129/products/image-1072_1200x1200.jpg",
+        "CURRENT_PRICE": 8.50,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 9.00,
+        "CATEGORY": "HIGIENE",
+        "BADGE": "aa-sale",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Elite x24",
+        "IMG_URL": "http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/05/19085724/7759185000680.jpg",
+        "CURRENT_PRICE": 25.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 25.50,
+        "CATEGORY": "HIGIENE",
+        "BADGE": "aa-sold-out",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Noble x4",
+        "IMG_URL": "https://dojiw2m9tvv09.cloudfront.net/42730/product/7806500507956-papeles-papel-higienico-papel-higienico-noble-x4-puntobarato9017.jpg",
+        "CURRENT_PRICE": 6.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 6.50,
+        "CATEGORY": "HIGIENE",
+        "BADGE": "aa-hot",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Babysec",
+        "IMG_URL": "https://pequeayuda.com/wp-content/uploads/2019/02/71739-540x540.jpg",
+        "CURRENT_PRICE": 5.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 5.50,
+        "CATEGORY": "HIGIENE",
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Morochas",
+        "IMG_URL": "https://wongfood.vteximg.com.br/arquivos/ids/415392-750-750/701635-1.jpg?v=637502554167400000",
+        "CURRENT_PRICE": 0.80,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 1.00,
+        "CATEGORY": "COMESTIBLES",
+        "BADGE": "aa-sale",
+        "GROUP": "NOVEDADES"
+    },
+    {
+        "NAME": "Sublime",
+        "IMG_URL": "https://www.corporacionliderperu.com/shop/29469-large_default/sublime-chocolate-clasico-x-30-gr.jpg",
+        "CURRENT_PRICE": 1.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 1.20,
+        "CATEGORY": "COMESTIBLES",
+        "BADGE": "aa-sold-out",
+        "GROUP": "NOVEDADES"
+    },
+    {
+        "NAME": "Picaras",
+        "IMG_URL": "https://static.mercadonegro.pe/wp-content/uploads/2021/08/18112105/PICARAS-negro.jpg",
+        "CURRENT_PRICE": 1.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 1.20,
+        "CATEGORY": "COMESTIBLES",
+        "BADGE": "aa-hot",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Cuates",
+        "IMG_URL": "https://agustomarket.com/wp-content/uploads/2021/12/los-cuates-picante.jpg",
+        "CURRENT_PRICE": 0.80,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 1.00,
+        "CATEGORY": "COMESTIBLES",
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Vanish",
+        "IMG_URL": "https://plazavea.vteximg.com.br/arquivos/ids/5684391-450-450/20182657.jpg",
+        "CURRENT_PRICE": 2.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 2.20,
+        "CATEGORY": "LIMPIEZA",
+        "BADGE": "aa-sale",
+        "GROUP": "NOVEDADES"
+    },
+    {
+        "NAME": "Sapolio lejía",
+        "IMG_URL": "https://www.corporacionliderperu.com/shop/30543-large_default/sapolio-lejia-x-335-gr-original.jpg",
+        "CURRENT_PRICE": 1.50,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 1.80,
+        "CATEGORY": "LIMPIEZA",
+        "BADGE": "aa-sold-out",
+        "GROUP": "POPULAR"
+    },
+    {
+        "NAME": "Sapolio Detergente",
+        "IMG_URL": "https://s.cornershopapp.com/product-images/1386308.jpg?versionId=m3TrZmN9VbcvetSt7ka_9XW8cfJtzYbn",
+        "CURRENT_PRICE": 5.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 5.50,
+        "CATEGORY": "LIMPIEZA",
+        "BADGE": "aa-hot",
+        "GROUP": "DESTACADO"
+    },
+    {
+        "NAME": "Sapolio Lavavajilla",
+        "IMG_URL": "https://promart.vteximg.com.br/arquivos/ids/567900-1000-1000/111802.jpg",
+        "CURRENT_PRICE": 18.00,
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae quod nulla porro quidem, itaque quis quaerat!",
+        "LAST_PRICE": 20.00,
+        "GROUP": "DESTACADO"
+    }
+]
