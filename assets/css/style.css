@@ -2458,13 +2458,13 @@ div[id^=quick-view-modal] .modal-content .aa-product-view-content .aa-prod-view-
 #checkout .checkout-area .checkout-left .panel-group .aa-checkout-login .aa-lost-password a {
   color: #555;
 }
-#checkout .checkout-area .checkout-left .panel-group .aa-checkout-billaddress .aa-checkout-single-bill {
+.aa-checkout-single-bill {
   display: inline;
   width: 100%;
   margin-bottom: 15px;
   float: left;
 }
-#checkout .checkout-area .checkout-left .panel-group .aa-checkout-billaddress .aa-checkout-single-bill input {
+.aa-checkout-single-bill input {
   border: 1px solid #ccc;
   height: 40px;
   padding: 10px;
@@ -2625,13 +2625,13 @@ div[id^=quick-view-modal] .modal-content .aa-product-view-content .aa-prod-view-
   font-weight: bold;
   padding-bottom: 10px;
 }
-#login-modal .modal-dialog .aa-register-now {
+.aa-register-now{
   border-top: 1px solid #ccc;
   margin-top: 55px;
   font-size: 14px;
   padding-top: 10px;
 }
-#login-modal .modal-dialog .aa-register-now a {
+.aa-register-now a {
   margin-left: 5px;
 }
 

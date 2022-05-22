@@ -210,7 +210,7 @@ div[id^=quick-view-modal] .modal-content .aa-product-view-content .aa-prod-quant
 #checkout .checkout-area .checkout-right h4 { 
   color: #a5d549;
 }
-#login-modal .modal-dialog .aa-register-now a {
+.aa-register-now a {
   color: #a5d549;
 }
 #aa-blog-archive .aa-blog-archive-area .aa-blog-content .aa-blog-content-single h4 a:hover, #aa-blog-archive .aa-blog-archive-area .aa-blog-content .aa-blog-content-single h4 a:focus {

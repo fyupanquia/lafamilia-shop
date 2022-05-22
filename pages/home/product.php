@@ -11,9 +11,6 @@
 	</figcaption>
 	</figure>                        
 	<div class="aa-product-hvr-content">
-	<a href="#" data-toggle="tooltip" data-placement="top" title="Agregar a favoritos">
-		<span class="fa fa-heart-o"></span>
-	</a>
 	<a href="#" data-toggle2="tooltip" 
 		data-placement="top" 
 		title="Visualizar" 

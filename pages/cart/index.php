@@ -54,7 +54,7 @@
                    </tr>
                  </tbody>
                </table>
-               <a href="#" class="aa-cart-view-btn">Pagar</a>
+               <a href="/index.php?page=checkout" class="aa-cart-view-btn">Pagar</a>
              </div>
            </div>
          </div>
