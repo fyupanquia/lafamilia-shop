@@ -6,13 +6,14 @@
     if(!count($products)) {
         header("Location: /admin/productos");
     }
+    define("CURRENCY_LABEL", "S./");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>Atualizar</title>
+        <title>Actualizar</title>
         <meta charse        t="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../Style/headerCSS.css" rel="stylesheet">
@@ -56,7 +57,7 @@
                                 <th><?=$product->NOMBRE?></th>
                                 <th><?=$product->CATEGORIA?></th>
                                 <th><?=$product->GRUPO?></th>
-                                <th><?=$product->MONTO_UNIT?></th>
+                                <th><?=CURRENCY_LABEL." ".$product->MONTO_UNIT?></th>
                                 <th><?=$product->CANTIDAD?></th>
                                 <th>
                                     <img height="200px" src="<?=$product->IMG_URL?>">
@@ -72,7 +73,7 @@
                         <tr>
                             <td colspan="4"></td>
                             <td>TOTAL</td>
-                            <td><?=$total?></td>
+                            <td><?=CURRENCY_LABEL." ".$total?></td>
                         </tr>
                     </tfoot>
                 </table>

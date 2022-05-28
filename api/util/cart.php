@@ -75,6 +75,7 @@ function mergeSessionCartStoredCart($entityId){
         restartCartDetailBySaleId($sale->ID);
     } else {
         $sale = createCart($entityId);
+        $storedCart = $sessionCart;
     }
     pushCart($sale->ID, $storedCart);
     $_SESSION["cart"] = $storedCart;
