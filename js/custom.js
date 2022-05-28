@@ -435,6 +435,7 @@ jQuery(function ($) {
 			if (id) {
 				const quantity = $(this).parent().parent().find(`select[name=quantity-${id}] option`).filter(':selected').val() || 1
 				if (quantity) {
+					$("#wpf-loader-two").css("display", "block");
 					addToCart(id, quantity, (data) => {
 						const body = data.body
 						if (data.success) {
@@ -451,7 +452,6 @@ jQuery(function ($) {
 									<h4><a href="#">${item.NOMBRE}</a></h4>
 									<p>${item.CANTIDAD} x S./ ${item.PRECIO}</p>
 									</div>
-									<a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
 								</li>`;
 								total += item.CANTIDAD * item.PRECIO;
 							}
@@ -471,6 +471,7 @@ jQuery(function ($) {
 						} else {
 							alert(data.message)
 						}
+						$("#wpf-loader-two").css("display", "none");
 					})
 					return;
 				}

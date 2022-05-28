@@ -1,5 +1,6 @@
 <?php
     $cart = $_SESSION["cart"];
+    $entity = $_SESSION["entity"];
     $total = 0;
 ?>
 <div class="checkout-right">
@@ -49,7 +50,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="aa-checkout-single-bill">
-                        <input type="text" name="mmaa" placeholder="MM/AA*">
+                        <input tyspe="text" name="mmaa" placeholder="MM/AA*">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -59,6 +60,8 @@
                 </div>
             </div>
         </div>
-        <input id="pay" type="button" value="Procesar" class="aa-browse-btn">
+        <?php if($entity){ ?>
+            <input id="pay" type="button" value="Procesar" class="aa-browse-btn">
+        <?php } ?>
     </div>
 </div>

@@ -22,12 +22,12 @@
         <a href="/" class="btn btn-warning">Volver a tienda</a>
     </p>
     <br><br>
-        <a href="admin/productos" class="btn btn-success">Registrar productos</a>
+        <a href="/admin/productos" class="btn btn-success">Registrar productos</a>
     <br>
     <br><br>
-        <a href="admin/entidades" class="btn btn-success">Registrar entidades</a>
+        <a href="/admin/entidades" class="btn btn-success">Registrar entidades</a>
     <br><br>
-        <a href="admin/ventas" class="btn btn-success">Visualizar ventas</a>
+        <a href="/admin/ventas" class="btn btn-success">Visualizar ventas</a>
     </body>
 
     <footer>
