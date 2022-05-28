@@ -1,6 +1,6 @@
 <?php
-include('../connection.php');
-$products = json_decode(file_get_contents("products.json"));
+require_once __DIR__."/../api/connection.php";
+$products = json_decode(file_get_contents(__DIR__."/data/products.json"));
 
 try {
     $insertSQL = 'INSERT INTO 
@@ -12,11 +12,13 @@ try {
         `IMG_URL`,
         `CATEGORIA`,
         `BADGE`,
-        `GRUPO`
+        `GRUPO`,
+        `STOCK`
     ) 
     VALUES ';
 
     foreach ($products as $product){
+        $STOCK = $product->STOCK ? $product->STOCK : 10;
         $insertSQL .= "(
             '$product->NAME', 
             '$product->DESCRIPTION', 
@@ -25,11 +27,12 @@ try {
             '$product->IMG_URL',
             '$product->CATEGORY',
             '$product->BADGE',
-            '$product->GROUP'),";
+            '$product->GROUP',
+            '$STOCK'),";
     }
     $bd = getConnection();
     $rsp = $bd->exec(substr($insertSQL, 0, -1));
-    print_r($rsp);     
+    echo "correcto!";
 } catch(PDOException $e) {
     echo $e->getMessage();
 }

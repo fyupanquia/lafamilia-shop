@@ -1,0 +1,105 @@
+/* General */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+
+/*Encabezado*/
+.header{
+	background-color: rgb(77, 152, 115);
+	color: #dce0c8;
+	padding: 2px 20rem;/*agrega espacio arriba - costado */
+    /*Fijar encabezado*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header a{
+	color: white;
+	text-decoration: none;/*quita el subrayado*/
+}
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+    letter-spacing: 6px;/*espacio entre letras*/
+    font-size: 2em;/*Cambia el tamaño*/
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;/*quita la viñeta [el punto]*/
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 1rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover{
+    background: #ff000085;
+
+}
+/*Contenido principal*/
+.main{
+    padding-top: 3rem;
+} 
+
+/*Cuerpo*/
+body{
+    background-color: #dce0c8;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%2396abb3' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+position: relative;
+padding-bottom: 3em;
+min-height: 100vh;
+}
+table {
+	text-align: center;
+}
+tbody {
+    background-color: white;
+ }
+  /* Boton eliminar*/ 
+  .table__item__link {
+    display:flex;
+    padding: 7px;
+    width: 75px;
+    text-decoration:none;
+    color: white;
+    background-color:red;
+    border-radius:5px;  
+ }
+ .table__item__link:hover{
+     color: black;
+ }
+
+/*pie de pagina*/
+footer {
+	background-color: black;
+	color: #1bc2af;
+    padding: 10px 0;/*agrega espacio arriba - costado */
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*actualizar.php*/
+.cont_tot {
+margin: 30px;
+width: 100%;
+display: flex;
+}
+
+
+/*global*/
+.ta-center{
+    text-align: center;
+}

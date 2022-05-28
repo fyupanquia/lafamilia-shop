@@ -350,14 +350,15 @@ jQuery(function ($) {
 			dataType: 'json'
 		})
 			.done(function (data) {
+				console.log({ data })
 				if (data.success) {
 					location.reload()
 					return;
 				}
 				$("#wpf-loader-two").css("display", "none");
 				$(".aa-register-now").html(data.message)
-				$(this).removeAttr("disabled", true)
-				$("#register").removeAttr("disabled", true)
+				$("#login").removeAttr("disabled")
+				$("#register").removeAttr("disabled")
 			}).fail(function (err) {
 				$("#wpf-loader-two").css("display", "none");
 				console.log({
@@ -387,14 +388,15 @@ jQuery(function ($) {
 			dataType: 'json'
 		})
 			.done(function (data) {
+				console.log({ data2: data })
 				if (data.success) {
 					location.reload()
 					return;
 				}
-				$("#wpf-loader-two").css("display", "none");
 				$(".aa-register-now").html(data.message)
-				$(this).removeAttr("disabled", true)
-				$("#login").removeAttr("disabled", true)
+				$("#register").removeAttr("disabled")
+				$("#login").removeAttr("disabled")
+				$("#wpf-loader-two").css("display", "none");
 			}).fail(function (err) {
 				$("#wpf-loader-two").css("display", "none");
 				console.log({
@@ -443,30 +445,31 @@ jQuery(function ($) {
 							for (let index = 0; index < (lcart > 3 ? 3 : lcart); index++) {
 								const item = body.cart[index];
 								newhtml = `${newhtml}
-                  <li>
-                    <a class="aa-cartbox-img" href="#"><img src="${item.IMG_URL}" alt="img"></a>
-                    <div class="aa-cartbox-info">
-                      <h4><a href="#">${item.NOMBRE}</a></h4>
-                      <p>${item.CANTIDAD} x S./ ${item.PRECIO}</p>
-                    </div>
-                    <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                  </li>`;
+								<li>
+									<a class="aa-cartbox-img" href="#"><img src="${item.IMG_URL}" alt="img"></a>
+									<div class="aa-cartbox-info">
+									<h4><a href="#">${item.NOMBRE}</a></h4>
+									<p>${item.CANTIDAD} x S./ ${item.PRECIO}</p>
+									</div>
+									<a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+								</li>`;
 								total += item.CANTIDAD * item.PRECIO;
 							}
 							if (lcart <= 3) {
 								newhtml = `${newhtml}<li>
-                    <span class="aa-cartbox-total-title">
-                      Total
-                    </span>
-                    <span class="aa-cartbox-total-price">S./ ${total}</span>
-                  </li>`
+									<span class="aa-cartbox-total-title">
+									Total
+									</span>
+									<span class="aa-cartbox-total-price">S./ ${total}</span>
+								</li>`
 							}
 							if ($(".aa-cartbox-summary ul li").length === 1)
 								$(".aa-cartbox-summary").append(`<a class="aa-cartbox-checkout aa-primary-btn" href="/index.php?page=cart" >Ver todo</a>`)
 
 							$(".aa-cartbox-summary ul").html(newhtml)
+							alert("Su producto fue guardado correctamente");
 						} else {
-							alert("No se logró agregar al carrito.")
+							alert(data.message)
 						}
 					})
 					return;
@@ -482,8 +485,10 @@ jQuery(function ($) {
 			const id = productid.split("-")[1];
 			if (id) {
 				const quantity = $(this).val()
+				$("#wpf-loader-two").css("display", "block");
 				addToCart(id, quantity, (data) => {
 					console.log({ data })
+					location.reload();
 				})
 			}
 		}
@@ -505,19 +510,20 @@ jQuery(function ($) {
 	/* ----------------------------------------------------------- */
 	/*  17. PAY
 	/* ----------------------------------------------------------- */
-	$(".aa-browse-btn").click(function () {
+	$("#pay").click(function () {
 		const data = {
 			NOMBRE: $(".aa-checkout-billaddress input[name=name]").val(),
 			NUM_DOCUMENTO: $(".aa-checkout-billaddress input[name=num_documento]").val(),
 			EMAIL: $(".aa-checkout-billaddress input[name=email]").val(),
 			CELULAR: $(".aa-checkout-billaddress input[name=phone]").val(),
+			COMPROBANTE: $(".aa-checkout-billaddress [name=voucher] option").filter(':selected').val(),
 			DIRECCION: $(".aa-checkout-billaddress textarea[name=address]").val(),
 			TIPO_PAGO: $(".checkout-right input[name=optionsRadios]:checked").val(),
 			TARJETA: $(".paypal-form input[name=card]").val(),
 			MMAA: $(".paypal-form input[name=mmaa]").val(),
 			CVV: $(".paypal-form input[name=cvv]").val(),
 		}
-
+		$("#wpf-loader-two").css("display", "block");
 		$.ajax({
 			type: "POST",
 			url: "/api/payment.php",
@@ -525,7 +531,13 @@ jQuery(function ($) {
 			dataType: 'json'
 		})
 			.done(function (data) {
-				console.log(data)
+				$("#wpf-loader-two").css("display", "none");
+				if (data.success) {
+					alert("Su orden fue registrado correctamente.");
+					window.location = "/";
+				} else {
+					alert(data.message);
+				}
 			})
 			.fail(function (err) {
 				console.log({
@@ -535,5 +547,25 @@ jQuery(function ($) {
 
 	});
 
+	/* ----------------------------------------------------------- */
+	/*  18. REMOVE FROM CART
+	/* ----------------------------------------------------------- */
+	$(".remove").click(function () {
+		const productid = $(this).attr("class").split(" ")[1];
+		$("#wpf-loader-two").css("display", "block");
+		if (productid) {
+			const id = productid.split("-")[1];
+			if (id) {
+				addToCart(id, 0, (data) => {
+					if (data.success) {
+						window.location = "/index.php?page=cart";
+					} else {
+						$("#wpf-loader-two").css("display", "none");
+						alert(data.mesage);
+					}
+				})
+			}
+		}
+	})
 });
 

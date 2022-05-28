@@ -2,6 +2,7 @@
 header('Content-Type: application/json; charset=utf-8');
 include __DIR__."/connection.php";
 include __DIR__.'/util.php';
+include __DIR__."/util/cart.php";
 
 resolveEntityIfExists();
 
@@ -15,9 +16,7 @@ if ($login->email == "" || $login->password == ""){
 
 $db = getConnection();
 $stmt = $db->prepare("  SELECT 
-                            `ID`, `EMAIL`, `PASSWORD`, 
-                            `NUM_DOCUMENTO`,`TIPO_DOCUMENTO`,`RAZON_SOCIAL`,
-                            `TIPO`,`DIRECCION`, `NOMBRE`, `IMG_URL`
+                           *
                         FROM `ENTIDADES` 
                         WHERE email=:email;");
 $stmt->bindValue(':email', $login->email, PDO::PARAM_STR);
@@ -26,5 +25,7 @@ $record = $stmt->fetch(PDO::FETCH_OBJ);
 if(!$record || !password_verify($login->password, $record->PASSWORD)) {
     throwError("Email o contraseña inválidos");
 }
+
+mergeSessionCartStoredCart($record->ID);
 
 reolveEntity($record);

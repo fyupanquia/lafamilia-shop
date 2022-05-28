@@ -21,11 +21,9 @@ function resolveEntityIfExists(){
 function reolveEntity($record){
     $obj = new stdClass;
     $obj->success = true;
-    unset($record->ID);
-    unset($record->PASSWORD);
-    $obj->body = $record;
     $_SESSION['entity'] = $record;
-
+    
+    unset($record->PASSWORD);
     echo json_encode($obj);
     exit;
 }

@@ -14,7 +14,7 @@
                         <?php foreach ($products as $index => $product){ ?>
                           <?php include __DIR__.'/home/product.php' ?>
                         <?php } ?>
-                        <?php if(count($products)<4){?>
+                        <?php if(count($products)<4){ ?>
                             <?php for ($i=0; $i < (4-count($products)); $i++) {  ?>
                                 <li style="visibility: hidden;">
                                     <figure>

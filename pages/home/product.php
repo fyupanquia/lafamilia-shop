@@ -1,8 +1,11 @@
+<?php $product->BADGE = $product->STOCK<=0 ? "aa-sold-out" : $product->BADGE; ?>
 <li>
 	<figure>
 	<a class="aa-product-img" href="#"><img src="<?= $product->IMG_URL  ?>" alt="<?=$product->NOMBRE?> img"></a>
-	<a class="aa-add-card-btn product-<?=$product->ID?>"href="#"><span class="fa fa-shopping-cart"></span>Agregar</a>
-		<figcaption>
+	<?php if($product->BADGE!="aa-sold-out"){ ?>
+		<a class="aa-add-card-btn product-<?=$product->ID?>"href="#"><span class="fa fa-shopping-cart"></span>Agregar</a>
+	<?php } ?>
+	<figcaption>
 		<h4 class="aa-product-title"><a href="#"><?=$product->NOMBRE?></a></h4>
 		<span class="aa-product-price"><?=CURRENCY_LABEL." $product->PRECIO"?></span>
 		<?php if($product->BADGE=="aa-sale"){ ?>
@@ -20,7 +23,8 @@
 	</a>
 	</div>
 	<!-- product badge -->
-	<?php if($product->BADGE){ ?>
+	<?php 
+		if($product->BADGE){ ?>
 		<span class="aa-badge <?=$product->BADGE?>" href="#">
 		<?php
 			switch ($product->BADGE) {

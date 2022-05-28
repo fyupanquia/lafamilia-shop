@@ -1,8 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-session_start();
-include "connection.php";
-include 'util.php';
+include __DIR__."/connection.php";
+include __DIR__.'/util.php';
 
 resolveEntityIfExists();
 
@@ -33,6 +32,7 @@ $rsp = $db->exec($inserUserSQL);
 
 
 $record = new stdClass;
+$record->ID = $db->lastInsertId();
 $record->EMAIL = $newUser->email;
 $record->TIPO = 'CLIENTE';
 reolveEntity($record);

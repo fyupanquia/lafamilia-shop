@@ -1,5 +1,5 @@
 <?php
-	require_once('api/products.php');
+	require_once('api/util/products.php');
 	$PRODUCTS_X_CATEGORIES = getProductsXCategories();
 	$GROUPS = getProductsXGroups($PRODUCTS_X_CATEGORIES);
 ?>

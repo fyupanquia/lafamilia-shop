@@ -1,4 +1,5 @@
 <!-- Visualizar modal -->
+<?php $product->BADGE = $product->STOCK<=0 ? "aa-sold-out" : $product->BADGE; ?>
 <div class="modal fade" id="quick-view-modal-<?=$MODAL_TARGET?>-<?=$product->ID?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog">
     <div class="modal-content">
@@ -25,27 +26,40 @@
             <h3><?=$product->NOMBRE?></h3>
             <div class="aa-price-block">
                 <span class="aa-product-view-price"><?=CURRENCY_LABEL." $product->PRECIO"?></span>
-                <p class="aa-product-avilability"><span>En stock</span></p>
+                <p class="aa-product-avilability"><span><?php
+                    if($product->BADGE!="aa-sold-out") {
+                        echo "En stock";
+                    } else {
+                        echo "Sin stock";
+                    }
+                ?></span></p>
             </div>
             <p><?=$product->DESCRIPCION?></p>
             <div class="aa-prod-quantity">
-                <form action="">
-                    <select name="quantity-<?=$product->ID?>">
-                        <option value="1" selected="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </form>
                 <p class="aa-prod-category">
-                Categoria: <a href="#"><?=$product->CATEGORIA?></a>
+                    Categoria: <a href="#"><?=$product->CATEGORIA?></a>
                 </p>
+                <br/>
+                <?php if($product->BADGE!="aa-sold-out"){ ?>
+                    <span>Cantidad: </span>
+                    <form action="">
+                        <select name="quantity-<?=$product->ID?>">
+                            <option value="1" selected="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                <?php } ?>
             </div>
-            <div class="aa-prod-view-bottom">
-                <a href="#" class="aa-add-to-cart-btn product-<?=$product->ID?>"><span class="fa fa-shopping-cart"></span>Agregar</a>
-                <!-- a href="#" class="aa-add-to-cart-btn">Ver detalles</a-->
-            </div>
+            <?php if($product->BADGE!="aa-sold-out"){ ?>
+                <div class="aa-prod-view-bottom">
+                    <a href="#" class="aa-add-to-cart-btn product-<?=$product->ID?>">
+                        <span class="fa fa-shopping-cart"></span>Agregar
+                    </a>
+                </div>
+            <?php } ?>
             </div>
         </div>
         </div>

@@ -54,11 +54,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="aa-checkout-single-bill">
-                        <input type="text" name="cvv"  placeholder="CVV*">
+                        <input type="password" name="cvv"  placeholder="CVV*">
                     </div>
                 </div>
             </div>
         </div>
-        <input type="button" value="Procesar" class="aa-browse-btn">
+        <input id="pay" type="button" value="Procesar" class="aa-browse-btn">
     </div>
 </div>

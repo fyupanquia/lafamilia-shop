@@ -15,6 +15,10 @@ if (!(strlen("$CELULAR") == 9 || strlen("$CELULAR") == 7)) {
     throwError("Su número de celular es inválido.");
 }
 
+if(!in_array($COMPROBANTE, array("BOLETA", "FACTURA"))) {
+    throwError("Seleccione un tipo de comprobante.");
+}
+
 if(!filter_var($EMAIL, FILTER_VALIDATE_EMAIL)){
     throwError("Su correo electrónico es inválido.");
 }

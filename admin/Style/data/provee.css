@@ -1,0 +1,71 @@
+/* General */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+
+/*encabezado*/
+header{
+	background-color: rgb(77, 152, 115);
+	color: #dce0c8;
+	padding: 2rem 0;
+	/*display: flex;
+	text-decoration:none;
+	justify-content: center;
+	padding: 7px;*/
+}
+
+.container_mt-5{
+	margin: 20px;
+}
+
+/*cuerpo de la pagina*/
+body {
+	background-color: #dce0c8;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%2396abb3' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	font-size:16px;
+	/*font-family: 'Oswald', sans-serif;*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+}
+
+.col-md-9{
+	text-align: center;
+}
+
+ tbody {
+    background-color: white;
+ }
+
+ /* Boton eliminar*/ 
+ .table__item__link {
+    display:flex;
+    padding: 7px;
+    width: 75px;
+    text-decoration:none;
+    color: white;
+    background-color:red;
+    border-radius:5px;  
+ }
+ .table__item__link:hover{
+     color: black;
+ }
+
+/*pie de pagina*/
+footer {
+	background-color: black;
+	color: #1bc2af;
+	padding: 4px;
+	text-align: center;
+	margin-top: auto;
+}
+
+/*actualizar.php*/
+.cont_tot {
+	margin: 30px;
+	width: 100%;
+	display: flex;
+  }

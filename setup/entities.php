@@ -1,16 +1,22 @@
 <?php
-include('../connection.php');
-$entities = json_decode(file_get_contents("entities.json"));
+require_once __DIR__."/../api/connection.php";
+$entities = json_decode(file_get_contents(__DIR__."/data/entities.json"));
 
 try {
     $inserUserSQL = 'INSERT INTO 
-    `ENTIDADES`(`EMAIL`, `PASSWORD`, `NUM_DOCUMENTO`, `TIPO_DOCUMENTO`, `RAZON_SOCIAL`, `TIPO`, `DIRECCION`, `NOMBRE`, `IMG_URL`) 
+    `ENTIDADES`(
+        `EMAIL`, `PASSWORD`, `NUM_DOCUMENTO`, 
+        `TIPO_DOCUMENTO`, `RAZON_SOCIAL`, 
+        `TIPO`, `DIRECCION`, 
+        `NOMBRE`, `IMG_URL`
+    ) 
     VALUES ';
 
-    foreach ($entities as $entity){
+    foreach ($entities as $entity) {
+        $PASSWORD = $entity->PASSWORD ? password_hash($entity->PASSWORD, PASSWORD_DEFAULT) : "";
         $inserUserSQL .= "(
             '$entity->EMAIL', 
-            '$entity->PASSWORD', 
+            '$PASSWORD', 
             '$entity->NUM_DOCUMENTO',
             '$entity->TIPO_DOCUMENTO',
             '$entity->RAZON_SOCIAL',
@@ -21,7 +27,7 @@ try {
     }
     $bd = getConnection();
     $rsp = $bd->exec(substr($inserUserSQL, 0, -1));
-    print_r($rsp);     
+    echo "correcto!";
 } catch(PDOException $e) {
     echo $e->getMessage();
 }

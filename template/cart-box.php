@@ -23,7 +23,6 @@
             <p><?=$item->CANTIDAD?> x <?=CURRENCY_LABEL." $item->PRECIO"?></p>
             <?php  ?>
           </div>
-          <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
         </li>
       <?php }
           $total += $item->CANTIDAD * $item->PRECIO;

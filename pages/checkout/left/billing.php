@@ -22,7 +22,7 @@
       <div class="row">
           <div class="col-md-6">
           <div class="aa-checkout-single-bill">
-            <input type="text" name="num_documento" placeholder="Número Documento*" value="<?=$entity->NUM_DOCUMENTO?>">
+            <input type="text" name="num_documento" placeholder="Número DNI*" value="<?=$entity->NUM_DOCUMENTO?>">
           </div>
         </div>
         <div class="col-md-6">
@@ -35,6 +35,15 @@
         <div class="col-md-6">
           <div class="aa-checkout-single-bill">
             <input type="tel" name="phone" placeholder="Celular*" value="<?=$entity->CELULAR?>">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="aa-checkout-single-bill">
+            <select name="voucher">
+              <option value="0">COMPROBANTE</option>
+              <option value="BOLETA">BOLETA</option>
+              <option value="FACTURA">FACTURA</option>
+            </select>
           </div>
         </div>
       </div>

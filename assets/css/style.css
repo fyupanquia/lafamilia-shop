@@ -1283,7 +1283,7 @@ div[id^=quick-view-modal] .modal-content .aa-product-view-content .aa-prod-quant
 }
 div[id^=quick-view-modal] .modal-content .aa-product-view-content .aa-prod-quantity .aa-prod-category {
   display: inline-block;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 div[id^=quick-view-modal] .modal-content .aa-product-view-content .aa-prod-quantity .aa-prod-category a {
   font-size: 14px;

@@ -1,7 +1,7 @@
 [
     {
         "EMAIL": "contact@gloria.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111111",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Gloria",
@@ -12,7 +12,7 @@
     },
     {
         "EMAIL": "contact@elite.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111112",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Elite",
@@ -23,7 +23,7 @@
     },
     {
         "EMAIL": "contact@pg.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111113",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Procter & Gamble",
@@ -34,7 +34,7 @@
     },
     {
         "EMAIL": "contact@donofrio.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111114",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Donofrio",
@@ -45,7 +45,7 @@
     },
     {
         "EMAIL": "contact@backus.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111115",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Backus",
@@ -56,7 +56,7 @@
     },
     {
         "EMAIL": "contact@incakola.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111116",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Inca Kola",
@@ -67,7 +67,7 @@
     },
     {
         "EMAIL": "contact@donvittorio.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111117",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Don Vittorio",
@@ -78,7 +78,7 @@
     },
     {
         "EMAIL": "contact@nestle.com",
-        "PASSWORD": "$2y$10$QZw5zOt5R9bvfCX9A/LLOuyOXQboYmu.8mTn9SzOJJCmgWSHbPSv2",
+        "PASSWORD": "fyupanquia",
         "NUM_DOCUMENTO": "11111111118",
         "TIPO_DOCUMENTO": "RUC",
         "RAZON_SOCIAL": "Nestle",
@@ -86,5 +86,27 @@
         "DIRECCION": "",
         "IMG_URL": "https://1000marcas.net/wp-content/uploads/2020/01/Nestle-logo.jpg",
         "NOMBRE": "Nestle"
+    },
+    {
+        "EMAIL": "fyupanquia@lafamilia.com",
+        "PASSWORD": "fyupanquia",
+        "NUM_DOCUMENTO": "88888888",
+        "TIPO_DOCUMENTO": "DNI",
+        "RAZON_SOCIAL": "",
+        "TIPO": "VENDEDOR",
+        "DIRECCION": "",
+        "IMG_URL": "",
+        "NOMBRE": "Frank Yupanqui"
+    },
+    {
+        "EMAIL": "wyupanquia@outlook.com",
+        "PASSWORD": "fyupanquia",
+        "NUM_DOCUMENTO": "88888881",
+        "TIPO_DOCUMENTO": "DNI",
+        "RAZON_SOCIAL": "",
+        "TIPO": "CLIENTE",
+        "DIRECCION": "Av. Los álamos 184",
+        "IMG_URL": "",
+        "NOMBRE": "William Yupanqui"
     }
 ]

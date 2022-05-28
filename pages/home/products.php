@@ -28,7 +28,18 @@
                         <ul class="aa-product-catg">
                           <?php foreach ($products as $product){ ?>
                             <?php include 'product.php' ?>
-                          <?php } ?>   
+                          <?php } ?>  
+                          <?php if(count($products)<4){ ?>
+                            <?php for ($i=0; $i < (4-count($products)); $i++) {  ?>
+                                <li style="visibility: hidden;">
+                                    <figure>
+                                        <a class="aa-product-img" href="#">
+                                            <div class="img"></div>
+                                        </a>
+                                    </figure>                        
+                                </li>
+                            <?php } ?>
+                        <?php } ?> 
                         </ul>
                         <a class="aa-browse-btn" href="/index.php?page=product-list&category=<?=$category?>">Ver más<span class="fa fa-long-arrow-right"></span></a>
                       </div>

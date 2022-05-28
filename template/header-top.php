@@ -15,11 +15,14 @@
               <!-- / header top left -->
               <div class="aa-header-top-right">
                 <ul class="aa-head-top-nav-right">
-                  <?php if($_SESSION["entity"]) { ?>
-                    <!--li><a href="/index.php?page=account">Mi cuenta</a></li-->
-                    <!--li class="hidden-xs"><a href="wishlist.html">Deseos</a></li-->
+                  <?php $entity = $_SESSION["entity"]; ?>
+                  <?php if($entity) { ?>
+                    <?php if($entity->TIPO=="VENDEDOR") { ?>
+                      <li class="hidden-xs">
+                        <a href="/admin">Admin</a>
+                      </li>
+                    <?php } ?>
                     <li class="hidden-xs"><a href="/index.php?page=cart">Carrito</a></li>
-                    <!--li class="hidden-xs"><a href="checkout.php">Checkout</a></li-->
                     <li><a href="/api/logout.php">Logout</a></li>
                   <?php } else { ?>
                     <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
