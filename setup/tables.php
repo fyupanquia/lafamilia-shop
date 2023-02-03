@@ -56,5 +56,6 @@ try {
     $bd->exec($ENTIDADES.$PRODUCTOS.$VENTA.$VENTA_DETALLE);
     echo "correcto!";
 } catch(PDOException $e) {
+    print_r($e);
     echo $e->getMessage();
 }

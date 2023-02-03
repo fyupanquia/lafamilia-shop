@@ -17,19 +17,6 @@ $TARJETA = (int) trim($_POST["TARJETA"]);
 $MMAA = trim($_POST["MMAA"]);
 $CVV = (int) trim($_POST["CVV"]);
 
-
-/*
-$NOMBRE = "frank";
-$NUM_DOCUMENTO = "11111111";
-$EMAIL = "fyupanquia@outlook.com";
-$CELULAR = "912345678";
-$DIRECCION = "av. 184";
-$TIPO_PAGO = "paypal";
-$TARJETA = (int) "1111111111111111";
-$MMAA = "03/22";
-$CVV = "123";
-*/
-
 include_once __DIR__."/payment-validation.php";
 
 $entity = $_SESSION["entity"];

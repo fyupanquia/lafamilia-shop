@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  family:
+    build: .
+    volumes:
+        - /I/prjs/php/utp-la-familia/dailyshop/MarkUps-dailyShop/bodega-la-familia:/var/www/html
+    ports:
+      - "8000:80"
+    extra_hosts:
+      my-local-host: 192.168.1.3 #Local machine IP
